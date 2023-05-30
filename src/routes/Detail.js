@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Movie from "../components/Movie";
 
 function Detail() {
   const [loading, setLoading] = useState(true);
@@ -22,14 +21,7 @@ function Detail() {
         <h1>Loading...</h1>
       ) : (
         <div>
-          <Movie
-            key={movie.id}
-            id={movie.id}
-            coverImg={movie.medium_cover_image}
-            title={movie.title}
-            summary=""
-            genres={movie.genres}
-          />
+          <h1>Done</h1>
         </div>
       )}
     </div>
